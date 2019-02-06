@@ -84,56 +84,47 @@ unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* solarized dark */
-	"#073642",  /*  0: black    */
-	"#dc322f",  /*  1: red      */
-	"#859900",  /*  2: green    */
-	"#b58900",  /*  3: yellow   */
-	"#268bd2",  /*  4: blue     */
-	"#d33682",  /*  5: magenta  */
-	"#2aa198",  /*  6: cyan     */
-	"#eee8d5",  /*  7: white    */
-	"#002b36",  /*  8: brblack  */
-	"#cb4b16",  /*  9: brred    */
-	"#586e75",  /* 10: brgreen  */
-	"#657b83",  /* 11: bryellow */
-	"#839496",  /* 12: brblue   */
-	"#6c71c4",  /* 13: brmagenta*/
-	"#93a1a1",  /* 14: brcyan   */
-	"#fdf6e3",  /* 15: brwhite  */
+  "#1d1f21", /* base00 */
+  "#cc342b", /* base08 */
+  "#198844", /* base0B */
+  "#fba922", /* base0A */
+  "#3971ed", /* base0D */
+  "#a36ac7", /* base0E */
+  "#3971ed", /* base0C */
+  "#c5c8c6", /* base05 */
+  "#969896", /* base03 */
+  "#f96a38", /* base09 */
+  "#282a2e", /* base01 */
+  "#373b41", /* base02 */
+  "#b4b7b4", /* base04 */
+  "#e0e0e0", /* base06 */
+  "#3971ed", /* base0F */
+  "#ffffff", /* base07 */
 };
- 
-/* Terminal colors for alternate (light) palette */
+
 static const char *altcolorname[] = {
-	/* solarized light */
-	"#eee8d5",  /*  0: black    */
-	"#dc322f",  /*  1: red      */
-	"#859900",  /*  2: green    */
-	"#b58900",  /*  3: yellow   */
-	"#268bd2",  /*  4: blue     */
-	"#d33682",  /*  5: magenta  */
-	"#2aa198",  /*  6: cyan     */
-	"#073642",  /*  7: white    */
-	"#fdf6e3",  /*  8: brblack  */
-	"#cb4b16",  /*  9: brred    */
-	"#93a1a1",  /* 10: brgreen  */
-	"#839496",  /* 11: bryellow */
-	"#657b83",  /* 12: brblue   */
-	"#6c71c4",  /* 13: brmagenta*/
-	"#586e75",  /* 14: brcyan   */
-	"#002b36",  /* 15: brwhite  */
+  "#1d1f21", /* base00 */
+  "#cc342b", /* base08 */
+  "#198844", /* base0B */
+  "#fba922", /* base0A */
+  "#3971ed", /* base0D */
+  "#a36ac7", /* base0E */
+  "#3971ed", /* base0C */
+  "#c5c8c6", /* base05 */
+  "#969896", /* base03 */
+  "#f96a38", /* base09 */
+  "#282a2e", /* base01 */
+  "#373b41", /* base02 */
+  "#b4b7b4", /* base04 */
+  "#e0e0e0", /* base06 */
+  "#3971ed", /* base0F */
+  "#ffffff", /* base07 */
 };
 
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
-unsigned int defaultfg = 12;
-unsigned int defaultbg = 8;
-static unsigned int defaultcs = 14;
-static unsigned int defaultrcs = 15;
-
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 13;
+static unsigned int defaultrcs = 0;
 /*
  * Default shape of cursor
  * 2: Block ("█")
